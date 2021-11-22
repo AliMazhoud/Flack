@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../static/css/styles.css">
+    <script src= "{{ url_for('static', filename='main.js') }}"></script>
+    <title>Flack</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">
+        <img src="../static/img/logo1.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+        Slack
+      </a>
+    </nav>
+    <section class="login-block">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 login-sec">
+            <h2 class="text-center">Enter Now</h2>
+            <form id="display-form" class="login-form" method="POST" action="{{ url_for('login') }}">
+              <div class="form-group">
+                <label>Displayed Name</label>
+                <input id="login-name" type="text" class="form-control" placeholder="username" name="display-name" required>
+              </div>
+              <button type="submit" id="signin-button" class="btn btn-login float-right">Start Chatting</button>
+            </form>
+            <div class="copy-text">Created with <i class="far fa-heart"></i> by <a href="#">Ali Mazhoud</a></div>
+          </div>
+          <div class="col-md-8 banner-sec">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                  <img class="d-block img-fluid" src="../static/img/chat1.jpg" alt="First slide">
+                  <div class="carousel-caption d-none d-md-block">
+                    <div class="banner-text">
+                      <h2>This is Flack</h2>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block img-fluid" src="https://images.pexels.com/photos/7097/people-coffee-tea-meeting.jpg" alt="First slide">
+                  <div class="carousel-caption d-none d-md-block">
+                    <div class="banner-text">
+                      <h2>This is Flack</h2>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block img-fluid" src="../static/img/chat2.jpg" alt="First slide">
+                  <div class="carousel-caption d-none d-md-block">
+                    <div class="banner-text">
+                      <h2>This is Flack</h2>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>
